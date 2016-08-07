@@ -1,0 +1,17 @@
+<section>
+    <div class="container">
+        <!--  this is tesxt{{data.document.patterns}}
+       <button ng-click="changeLanguage('en')" >en</button>
+       <button ng-click="changeLanguage('de')">dc</button>-->
+
+        <h2 class="hidden-xs">Risk Classbased Therapy</h2>
+        <div class="clearfix hrspacing20 hidden-sm"></div>
+        <div class="clearfix hrspacing42 visible-sm"></div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="risktherapy-table" ng-repeat="therapy in vm.therapyData track by $index">
+                  <classbase-therapy therapy="therapy"></classbase-therapy>
+            </div>
+        </div>
+    </div>
+</section>

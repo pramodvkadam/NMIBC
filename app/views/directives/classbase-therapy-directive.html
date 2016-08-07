@@ -1,0 +1,81 @@
+<table class="table table-bordered" >
+    {{vm.setCount()}}
+    <tr>
+        <th>
+            <div class="pull-right" ng-if="vm.therapy.riskgroup.__cdata !== '0'">{{vm.therapy.riskgroup.__cdata}} </div>
+            <div class="pull-left" ng-if="vm.therapy.decision.__cdata !== '0'">
+                <a ng-if="vm.therapy.decision._link !== ' '" target="_blank" ng-href="{{vm.therapy.decision._link}}">{{vm.therapy.decision.__cdata}}</a>
+            </div>
+        </th>
+    </tr>
+    <tr ng-if="vm.therapy.radicalcystectomy.__cdata !== '0'">
+        <td>
+            <div class="pull-left risk-status">{{vm.getCount()}}</div>
+            <div class="pull-left risk-content">
+                <div>Radical Cystectomy {{vm.therapy.radicalcystectomy.__cdata}}</div>
+            </div>
+        </td>
+    </tr>
+    <tr ng-if="vm.therapy.turbt !== '0'">
+        <td>
+            <div class="pull-left risk-status">{{vm.getCount()}}</div>
+            <div class="pull-left risk-content">
+                <div>Turbt</div>
+            </div>
+        </td>
+    </tr>
+
+    <tr ng-if="vm.therapy.earlychemotherapyinstillation !== '0' || vm.therapy.earlychemotherapysubstance.__cdata !== 'n.a.' || vm.therapy.earlychemotherapydosage.__cdata !== 'n.a.'">
+        <td>
+            <div class="pull-left risk-status">{{vm.getCount()}}</div>
+            <div class="pull-left risk-content">
+                <div>
+                    <div class="riskmiddle-content">Early Chemotherapy Instillation
+                    </div>
+                    <div> {{vm.therapy.earlychemotherapydosage.__cdata}} <a href="{{vm.therapy.earlychemotherapysubstance._link}}" target="_blank">{{vm.therapy.earlychemotherapysubstance.__cdata}}</a>
+                    </div>
+                </div>
+        </td>
+    </tr>
+
+    <tr ng-if="vm.therapy.adjuvanttherapydosage.__cdata !== 'n.a.' || vm.therapy.adjuvanttherapysubstance.__cdata !== 'n.a.'" ng-init="no = no + 1">
+        <td>
+            <div class="pull-left risk-status">{{vm.getCount()}}</div>
+            <div class="pull-left risk-content">
+                <div class="riskmiddle-content">Adjuvant Instillation Therapy
+
+                </div>
+                <div class="riskmiddle-content"><a href="{{vm.therapy.adjuvanttherapysubstance._link}}">{{vm.therapy.adjuvanttherapysubstance.__cdata}}</a>
+                </div>
+                <div class="induction-block" ng-if="vm.therapy.inductiontherapy !== '0' || vm.therapy.inductiontherapyschedule.__cdata !== 'n.a.'">
+                    Induction:  {{vm.therapy.inductiontherapyschedule.__cdata}}
+                </div>
+                <div ng-if="vm.therapy.maintenancetherapyschedule.__cdata !== 'n.a.'">
+                    Maintenance:  {{vm.therapy.maintenancetherapyschedule.__cdata}}
+                </div>
+            </div>
+        </td>
+    </tr>
+
+</table>
+
+<div class="model-linkdata">
+    <a href="" ng-click="vm.setModalData(vm.therapy.literature1.__cdata,vm.therapy.link1.__cdata);vm.toggleModal()" ng-if="vm.therapy.literature1.__cdata !== ''">
+
+    </a>
+    <a href="" ng-click="vm.setModalData(vm.therapy.literature2.__cdata,vm.therapy.link2.__cdata);vm.toggleModal()"  ng-if="vm.therapy.literature2.__cdata !== ''">
+
+    </a>
+</div>
+
+<modal-dialog show='vm.dialogShown' width="50%">
+    <div class="modal-content">
+        <div class="modal-body">
+            <p>{{vm.modalData}}</p>
+        </div>
+        <div class="modal-footer">
+            <a href="{{vm.redirectLink}}"  ng-click="vm.toggleModal()" target="_blank" class="btn btn-default">Yes</a>
+            <button type="button" class="btn btn-default" ng-click="vm.toggleModal()">No</button>
+        </div>
+    </div>
+</modal-dialog>

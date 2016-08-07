@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="yes"?>
+
+<document>
+    <colNames irrelevantValueId="0">
+        <a>
+            <one id="1"><![CDATA[primär]]></one>
+            <two id="2"><![CDATA[recurrent[de]]]></two>
+            <three id="3"><![CDATA[BCG-refractory[de]]]></three>
+        </a>
+        <b>
+            <one id="1"><![CDATA[solitary[de]]]></one>
+            <two id="2"><![CDATA[multiple[de]]]></two>
+        </b>
+        <c>
+            <one id="1"><![CDATA[< 3 cm]]></one>
+            <two id="2"><![CDATA[> 3 cm]]></two>
+        </c>
+        <d>
+            <one id="1"><![CDATA[Ta]]></one>
+            <two id="2"><![CDATA[T1]]></two>
+        </d>
+        <e>
+            <one id="1"><![CDATA[G1]]></one>
+            <two id="2"><![CDATA[G2]]></two>
+            <three id="3"><![CDATA[G3]]></three>
+        </e>
+        <f>
+            <one id="1"><![CDATA[papillary[de]]]></one>
+            <two id="2"><![CDATA[CIS]]></two>
+            <three id="3"><![CDATA[concurrent CIS[de]]]></three>
+            <four id="4"><![CDATA[micro- papillary[de]]]></four>
+        </f>
+    </colNames>
+    <!-- <risk>
+     <one id="1"><![CDATA[Low Risk]]></one>
+     <two id="2"><![CDATA[Intermediate Risk]]></two>
+     <three id="3"><![CDATA[High Risk]]></three>
+     <four id="4"><![CDATA[Highest Risk]]></four>
+     </risk> -->
+    <combinations>
+        <combination risk="4" a="3" b="0" c="0" d="0" e="0" f="0"></combination>
+        <combination risk="4" a="0" b="0" c="0" d="0" e="0" f="4"></combination>
+        <combination risk="1" a="1" b="1" c="1" d="1" e="1" f="1"></combination>
+        <combination risk="2" a="1" b="1" c="1" d="1" e="2" f="1"></combination>
+        <combination risk="2" a="1" b="1" c="2" d="1" e="1" f="1"></combination>
+        <combination risk="2" a="1" b="1" c="2" d="1" e="2" f="1"></combination>
+        <combination risk="2" a="1" b="2" c="1" d="1" e="1" f="1"></combination>
+        <combination risk="2" a="1" b="2" c="1" d="1" e="2" f="1"></combination>
+        <combination risk="2" a="1" b="2" c="2" d="1" e="1" f="1"></combination>
+        <combination risk="2" a="1" b="2" c="2" d="1" e="2" f="1"></combination>
+        <combination risk="2" a="2" b="1" c="1" d="1" e="1" f="1"></combination>
+        <combination risk="2" a="2" b="1" c="1" d="1" e="2" f="1"></combination>
+        <combination risk="2" a="2" b="1" c="2" d="1" e="1" f="1"></combination>
+        <combination risk="2" a="2" b="1" c="2" d="1" e="2" f="1"></combination>
+        <combination risk="2" a="2" b="2" c="1" d="1" e="1" f="1"></combination>
+        <combination risk="2" a="2" b="2" c="1" d="1" e="2" f="1"></combination>
+        <combination risk="3" a="1" b="1" c="1" d="1" e="1" f="2"></combination>
+        <combination risk="3" a="1" b="1" c="1" d="1" e="1" f="3"></combination>
+        <combination risk="3" a="1" b="1" c="1" d="1" e="2" f="2"></combination>
+        <combination risk="3" a="1" b="1" c="1" d="1" e="2" f="3"></combination>
+        <combination risk="3" a="1" b="1" c="1" d="1" e="3" f="1"></combination>
+        <combination risk="3" a="1" b="1" c="1" d="1" e="3" f="2"></combination>
+        <combination risk="3" a="1" b="1" c="1" d="1" e="3" f="3"></combination>
+        <combination risk="3" a="1" b="1" c="1" d="2" e="1" f="1"></combination>
+        <combination risk="3" a="1" b="1" c="1" d="2" e="1" f="2"></combination>
+        <combination risk="3" a="1" b="1" c="1" d="2" e="1" f="3"></combination>
+        <combination risk="3" a="1" b="1" c="1" d="2" e="2" f="1"></combination>
+        <combination risk="3" a="1" b="1" c="1" d="2" e="2" f="2"></combination>
+        <combination risk="3" a="1" b="1" c="1" d="2" e="2" f="3"></combination>
+        <combination risk="3" a="1" b="1" c="1" d="2" e="3" f="1"></combination>
+        <combination risk="4" a="1" b="1" c="1" d="2" e="3" f="2"></combination>
+        <combination risk="3" a="1" b="1" c="2" d="1" e="1" f="2"></combination>
+        <combination risk="3" a="1" b="1" c="2" d="1" e="1" f="3"></combination>
+        <combination risk="3" a="1" b="1" c="2" d="1" e="2" f="2"></combination>
+        <combination risk="3" a="1" b="1" c="2" d="1" e="2" f="3"></combination>
+        <combination risk="3" a="1" b="1" c="2" d="1" e="3" f="1"></combination>
+        <combination risk="3" a="1" b="1" c="2" d="1" e="3" f="2"></combination>
+        <combination risk="3" a="1" b="1" c="2" d="1" e="3" f="3"></combination>
+        <combination risk="3" a="1" b="1" c="2" d="2" e="1" f="1"></combination>
+        <combination risk="3" a="1" b="1" c="2" d="2" e="1" f="2"></combination>
+        <combination risk="3" a="1" b="1" c="2" d="2" e="1" f="3"></combination>
+        <combination risk="3" a="1" b="1" c="2" d="2" e="2" f="1"></combination>
+        <combination risk="3" a="1" b="1" c="2" d="2" e="2" f="2"></combination>
+        <combination risk="3" a="1" b="1" c="2" d="2" e="2" f="3"></combination>
+        <combination risk="3" a="1" b="2" c="1" d="1" e="1" f="2"></combination>
+        <combination risk="3" a="1" b="2" c="1" d="1" e="1" f="3"></combination>
+        <combination risk="3" a="1" b="2" c="1" d="1" e="2" f="2"></combination>
+        <combination risk="3" a="1" b="2" c="1" d="1" e="2" f="3"></combination>
+        <combination risk="3" a="1" b="2" c="1" d="1" e="3" f="1"></combination>
+        <combination risk="3" a="1" b="2" c="1" d="1" e="3" f="2"></combination>
+        <combination risk="3" a="1" b="2" c="1" d="1" e="3" f="3"></combination>
+        <combination risk="3" a="1" b="2" c="1" d="2" e="1" f="1"></combination>
+        <combination risk="3" a="1" b="2" c="1" d="2" e="1" f="2"></combination>
+        <combination risk="3" a="1" b="2" c="1" d="2" e="1" f="3"></combination>
+        <combination risk="3" a="1" b="2" c="1" d="2" e="2" f="1"></combination>
+        <combination risk="3" a="1" b="2" c="1" d="2" e="2" f="2"></combination>
+        <combination risk="3" a="1" b="2" c="1" d="2" e="2" f="3"></combination>
+        <combination risk="3" a="1" b="2" c="2" d="1" e="1" f="2"></combination>
+        <combination risk="3" a="1" b="2" c="2" d="1" e="1" f="3"></combination>
+        <combination risk="3" a="1" b="2" c="2" d="1" e="2" f="2"></combination>
+        <combination risk="3" a="1" b="2" c="2" d="1" e="2" f="3"></combination>
+        <combination risk="3" a="1" b="2" c="2" d="1" e="3" f="1"></combination>
+        <combination risk="3" a="1" b="2" c="2" d="1" e="3" f="2"></combination>
+        <combination risk="3" a="1" b="2" c="2" d="1" e="3" f="3"></combination>
+        <combination risk="3" a="1" b="2" c="2" d="2" e="1" f="1"></combination>
+        <combination risk="3" a="1" b="2" c="2" d="2" e="1" f="2"></combination>
+        <combination risk="3" a="1" b="2" c="2" d="2" e="1" f="3"></combination>
+        <combination risk="3" a="1" b="2" c="2" d="2" e="2" f="1"></combination>
+        <combination risk="3" a="1" b="2" c="2" d="2" e="2" f="2"></combination>
+        <combination risk="3" a="1" b="2" c="2" d="2" e="2" f="3"></combination>
+        <combination risk="3" a="2" b="1" c="1" d="1" e="1" f="2"></combination>
+        <combination risk="3" a="2" b="1" c="1" d="1" e="1" f="3"></combination>
+        <combination risk="3" a="2" b="1" c="1" d="1" e="2" f="2"></combination>
+        <combination risk="3" a="2" b="1" c="1" d="1" e="2" f="3"></combination>
+        <combination risk="3" a="2" b="1" c="1" d="1" e="3" f="1"></combination>
+        <combination risk="3" a="2" b="1" c="1" d="1" e="3" f="2"></combination>
+        <combination risk="3" a="2" b="1" c="1" d="1" e="3" f="3"></combination>
+        <combination risk="3" a="2" b="1" c="1" d="2" e="1" f="1"></combination>
+        <combination risk="3" a="2" b="1" c="1" d="2" e="1" f="2"></combination>
+        <combination risk="3" a="2" b="1" c="1" d="2" e="1" f="3"></combination>
+        <combination risk="3" a="2" b="1" c="1" d="2" e="2" f="1"></combination>
+        <combination risk="3" a="2" b="1" c="1" d="2" e="2" f="2"></combination>
+        <combination risk="3" a="2" b="1" c="1" d="2" e="2" f="3"></combination>
+        <combination risk="3" a="2" b="1" c="2" d="1" e="1" f="2"></combination>
+        <combination risk="3" a="2" b="1" c="2" d="1" e="1" f="3"></combination>
+        <combination risk="3" a="2" b="1" c="2" d="1" e="2" f="2"></combination>
+        <combination risk="3" a="2" b="1" c="2" d="1" e="2" f="3"></combination>
+        <combination risk="3" a="2" b="1" c="2" d="1" e="3" f="1"></combination>
+        <combination risk="3" a="2" b="1" c="2" d="1" e="3" f="2"></combination>
+        <combination risk="3" a="2" b="1" c="2" d="1" e="3" f="3"></combination>
+        <combination risk="3" a="2" b="1" c="2" d="2" e="1" f="1"></combination>
+        <combination risk="3" a="2" b="1" c="2" d="2" e="1" f="2"></combination>
+        <combination risk="3" a="2" b="1" c="2" d="2" e="1" f="3"></combination>
+        <combination risk="3" a="2" b="1" c="2" d="2" e="2" f="1"></combination>
+        <combination risk="3" a="2" b="1" c="2" d="2" e="2" f="2"></combination>
+        <combination risk="3" a="2" b="1" c="2" d="2" e="2" f="3"></combination>
+        <combination risk="3" a="2" b="2" c="1" d="1" e="1" f="2"></combination>
+        <combination risk="3" a="2" b="2" c="1" d="1" e="1" f="3"></combination>
+        <combination risk="3" a="2" b="2" c="1" d="1" e="2" f="2"></combination>
+        <combination risk="3" a="2" b="2" c="1" d="1" e="2" f="3"></combination>
+        <combination risk="3" a="2" b="2" c="1" d="1" e="3" f="1"></combination>
+        <combination risk="3" a="2" b="2" c="1" d="1" e="3" f="2"></combination>
+        <combination risk="3" a="2" b="2" c="1" d="1" e="3" f="3"></combination>
+        <combination risk="3" a="2" b="2" c="1" d="2" e="1" f="1"></combination>
+        <combination risk="3" a="2" b="2" c="1" d="2" e="1" f="2"></combination>
+        <combination risk="3" a="2" b="2" c="1" d="2" e="1" f="3"></combination>
+        <combination risk="3" a="2" b="2" c="1" d="2" e="2" f="1"></combination>
+        <combination risk="3" a="2" b="2" c="1" d="2" e="2" f="2"></combination>
+        <combination risk="3" a="2" b="2" c="1" d="2" e="2" f="3"></combination>
+        <combination risk="3" a="2" b="2" c="2" d="1" e="1" f="1"></combination>
+        <combination risk="3" a="2" b="2" c="2" d="1" e="1" f="2"></combination>
+        <combination risk="3" a="2" b="2" c="2" d="1" e="1" f="3"></combination>
+        <combination risk="3" a="2" b="2" c="2" d="1" e="2" f="1"></combination>
+        <combination risk="3" a="2" b="2" c="2" d="1" e="2" f="2"></combination>
+        <combination risk="3" a="2" b="2" c="2" d="1" e="2" f="3"></combination>
+        <combination risk="3" a="2" b="2" c="2" d="1" e="3" f="1"></combination>
+        <combination risk="3" a="2" b="2" c="2" d="1" e="3" f="2"></combination>
+        <combination risk="3" a="2" b="2" c="2" d="1" e="3" f="3"></combination>
+        <combination risk="3" a="2" b="2" c="2" d="2" e="1" f="1"></combination>
+        <combination risk="3" a="2" b="2" c="2" d="2" e="1" f="2"></combination>
+        <combination risk="3" a="2" b="2" c="2" d="2" e="1" f="3"></combination>
+        <combination risk="3" a="2" b="2" c="2" d="2" e="2" f="1"></combination>
+        <combination risk="3" a="2" b="2" c="2" d="2" e="2" f="2"></combination>
+        <combination risk="3" a="2" b="2" c="2" d="2" e="2" f="3"></combination>
+        <combination risk="4" a="1" b="1" c="1" d="2" e="3" f="3"></combination>
+        <combination risk="4" a="1" b="1" c="2" d="2" e="3" f="1"></combination>
+        <combination risk="4" a="1" b="1" c="2" d="2" e="3" f="2"></combination>
+        <combination risk="4" a="1" b="1" c="2" d="2" e="3" f="3"></combination>
+        <combination risk="4" a="1" b="2" c="1" d="2" e="3" f="1"></combination>
+        <combination risk="4" a="1" b="2" c="1" d="2" e="3" f="2"></combination>
+        <combination risk="4" a="1" b="2" c="1" d="2" e="3" f="3"></combination>
+        <combination risk="4" a="1" b="2" c="2" d="2" e="3" f="1"></combination>
+        <combination risk="4" a="1" b="2" c="2" d="2" e="3" f="2"></combination>
+        <combination risk="4" a="1" b="2" c="2" d="2" e="3" f="3"></combination>
+        <combination risk="4" a="2" b="1" c="1" d="2" e="3" f="1"></combination>
+        <combination risk="4" a="2" b="1" c="1" d="2" e="3" f="2"></combination>
+        <combination risk="4" a="2" b="1" c="1" d="2" e="3" f="3"></combination>
+        <combination risk="4" a="2" b="1" c="2" d="2" e="3" f="1"></combination>
+        <combination risk="4" a="2" b="1" c="2" d="2" e="3" f="2"></combination>
+        <combination risk="4" a="2" b="1" c="2" d="2" e="3" f="3"></combination>
+        <combination risk="4" a="2" b="2" c="1" d="2" e="3" f="1"></combination>
+        <combination risk="4" a="2" b="2" c="1" d="2" e="3" f="2"></combination>
+        <combination risk="4" a="2" b="2" c="1" d="2" e="3" f="3"></combination>
+        <combination risk="4" a="2" b="2" c="2" d="2" e="3" f="1"></combination>
+        <combination risk="4" a="2" b="2" c="2" d="2" e="3" f="2"></combination>
+        <combination risk="4" a="2" b="2" c="2" d="2" e="3" f="3"></combination>    
+    </combinations>
+</document>

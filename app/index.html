@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../bower_components/bootstrap-submenu/dist/css/bootstrap-submenu.min.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/style.css">
+
+      <link href="../bower_components/ngModal/dist/ng-modal.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="nmibcApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <section class="container-fluid nopadd">
+        <!-- <div bccare-navgation></div>-->
+        <div class="col-md-12 nopadd bccare-navigation col-sm-4">
+            <nav class="navbar navbar-inverse" ng-controller="HeaderController as vm">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" id="showmenuleft-bar" class="navbar-toggle collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h2 class="visible-xs">Risk Stratification</h2>
+                        <a class="navbar-brand hidden-xs" href="#/"><img src="images/bc-care-logo.png" alt="" class="img-responsive" /></a>
+                        <div class="last-update pull-left hidden-sm hidden-xs">
+                            <h5>Last Update:</h5>
+                            <span>{{vm.lastUpdated * 1000 | date:'EEEE, dd.MM.yyyy '}}</span>
+                        </div>
+                    </div>
+                    <div id="navbar" class="mobileview-menu">
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="visible-xs visible-sm"><a href="#/" class="main-menu">Main Menu</a></li>
+                            <li class="active"><a class="riskstratification-menu" href="#/" >Risk Stratification</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle riskclassbased-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-submenu>Risk  Classbased Therapy <span class="caret" ></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#/risk-classbased-therapy/A">Low Risk</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="0">Intermediate Risk</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#/risk-classbased-therapy/B1">Lower Therapy Toxicity</a></li>
+                                            <li><a href="#/risk-classbased-therapy/B2">Lower Recurrence Risk</a></li>
+                                            <li><a href="#/risk-classbased-therapy/B1/B2">Any Decision</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#/risk-classbased-therapy/C">High Risk</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a>Highest Risk</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#/risk-classbased-therapy/D">BCG Naive/Susceptible</a></li>
+                                            <li><a href="#/risk-classbased-therapy/D*">BCG Refractory</a></li>
+                                            <li><a href="#/risk-classbased-therapy/D/D*">Any Decision</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">Any Risk</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#/risk-classbased-therapy/B1">Lower Therapy Toxicity</a></li>
+                                            <li><a href="#/risk-classbased-therapy/B2"> Lower Recurrence risk</a></li>
+                                            <li><a href="#/risk-classbased-therapy/D">BCG Naive/Susceptible</a></li>
+                                            <li><a href="#/risk-classbased-therapy/D*">BCG Refractory</a></li>
+                                            <li><a href="#/risk-classbased-therapy/">Any Decision</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#liability-reference" class="liabilityreference-menu">Liability reference</a></li>
+                            <li><a  href="#/glossary" class="glossary-menu">Glossary</a></li>
+                            <li><a  href="#/imprint" class="imprint-menu">Imprint</a></li>
+                            <li class="visible-xs visible-sm">
+                                <a class="lastupdate-menu">
+                                    <div>Last Update:</div>
+                                    <span>{{vm.lastUpdated * 1000 | date:'EEEE, dd.MM.yyyy '}}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </nav>
+        </div>
+        <!--NAVIGATION NMIBC -->
+        <section>
+            <div class="col-md-12 nopadd col-sm-offset-4 col-md-offset-0 col-sm-8" ng-view="">
+
+            </div>
+        </section>
+    </section>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/x2js/xml2json.min.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bower_components/angular-translate/angular-translate.js"></script>
+    <script src="../bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="../bower_components/angular-translate-loader-url/angular-translate-loader-url.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js"></script>
+<script src="../bower_components/angularjs-slider/dist/rzslider.min.js"></script>
+    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+    <script src="../bower_components/angular-xml/angular-xml.js"></script>
+    <script src="../bower_components/ngModal/dist/ng-modal.min.js"></script>
+    <script src="../node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/bootstrap-submenu/dist/js/bootstrap-submenu.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/risk-stratification-controller.js"></script>
+        <script src="scripts/services/risk-stratification-service.js"></script>
+        <script src="scripts/controllers/risk-classbased-therapy-controller.js"></script>
+        <script src="scripts/services/risk-classbased-therapy-service.js"></script>
+        <script src="scripts/directives/classbase-therapy-directive.js"></script>
+        <script src="scripts/controllers/header-controller.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

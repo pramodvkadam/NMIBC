@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<document>
+    <item>
+        <name><![CDATA[BC]]></name>
+        <description><![CDATA[Bladder cancer]]></description>
+    </item>
+    <item link="http://international.medac.de/medac_international/txt_files/t_indications/122711070497894.n.html">
+        <name><![CDATA[BCG]]></name>
+        <description><![CDATA[Bacillus Calmette-Guérin]]></description>
+    </item>
+    <item>
+        <name><![CDATA[CIS]]></name>
+        <description><![CDATA[Carcinoma in situ]]></description>
+    </item>
+    <item>
+        <name><![CDATA[Early Instillation]]></name>
+        <description><![CDATA[One single immediate postoperative (TURBT) chemotherapy instillation]]></description>
+    </item>
+    <item>
+        <name><![CDATA[EAU]]></name>
+        <description><![CDATA[European Association of Urolog]]></description>
+    </item>
+    <item>
+        <name><![CDATA[G1]]></name>
+        <description><![CDATA[Low grade tumour - cells well differentiated]]></description>
+    </item>
+    <item>
+        <name><![CDATA[G2]]></name>
+        <description><![CDATA[Intermediate grade tumour - cells moderately differentiated]]></description>
+    </item>
+    <item>
+        <name><![CDATA[G3]]></name>
+        <description><![CDATA[High grade tumor - cells poorly differentiated]]></description>
+    </item>
+    <item>
+        <name><![CDATA[Grade]]></name>
+        <description><![CDATA[Neoplastic three-tier grading as defined by the guidelines of the American Joint Commission on Cancer]]></description>
+    </item>
+    <item>
+        <name><![CDATA[NMIBC]]></name>
+        <description><![CDATA[Non-muscle invasive bladder bancer]]></description>
+    </item>
+    <item>
+        <name><![CDATA[Risk Class]]></name>
+        <description><![CDATA[Four-tier tumor classification of risk for recurrence and/or progression as definded by the "EAU Guidelines on Non-muscle invasive Bladder Cancer" (2013 Edition)]]></description>
+    </item>
+    <item>
+        <name><![CDATA[Stage]]></name>
+        <description><![CDATA[TNM classification of malignant tumours as maintained by the UICC]]></description>
+    </item>
+    <item>
+        <name><![CDATA[T1]]></name>
+        <description><![CDATA[Tumour invades subepithelial connective tissue]]></description>
+    </item>
+    <item>
+        <name><![CDATA[Ta]]></name>
+        <description><![CDATA[Non-invasive papillary carcinoma]]></description>
+    </item>
+    <item>
+        <name><![CDATA[TURBT]]></name>
+        <description><![CDATA[Transurethal resection of bladder tumor]]></description>
+    </item>
+    <item>
+        <name><![CDATA[UICC]]></name>
+        <description><![CDATA[International Union against Cancer]]></description>
+    </item>
+</document>

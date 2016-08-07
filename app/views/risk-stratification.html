@@ -1,0 +1,110 @@
+<section>
+    <div class="container">
+        <h2 class="hidden-xs">Risk Stratification</h2>
+        <div class="clearfix hrspacing30"></div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="riskstratification-slider">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="clearfix">
+                                <div class="pull-left risk-imgtitle-block">
+                                    <div>
+                                        <span class="inline-block pull-left stratification-img"><img src="images/type.scale.png" alt="" class="img-responsive"></span>
+                                        <span class="stratification-title"> Type </span>
+                                    </div>
+                                </div>
+                                <div class="pull-left risk-slider-block">
+                                    <div class="slider-block-inner">
+                                        <rzslider rz-slider-model="vm.slider.typeRisk.value" rz-slider-options="vm.slider.typeRisk.options"></rzslider>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="pull-left risk-imgtitle-block">
+                                    <div>
+                                        <span class="inline-block pull-left stratification-img"><img src="images/number.scale.png" alt="" class="img-responsive"></span>
+                                        <span class="stratification-title"> Number  </span>
+                                    </div>
+                                </div>
+                                <div class="pull-left risk-slider-block">
+                                    <div class="slider-block-inner">
+                                        <rzslider rz-slider-model="vm.slider.numberRisk.value" rz-slider-options="vm.slider.numberRisk.options"></rzslider>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="pull-left risk-imgtitle-block sizerisk-block">
+                                    <div>
+                                        <span class="inline-block pull-left  stratification-img"><img src="images/size.scale.png" alt="" class="img-responsive"></span>
+                                        <span class="stratification-title"> Size </span>
+                                    </div>
+                                </div>
+                                <div class="pull-left risk-slider-block">
+                                    <div class="slider-block-inner">
+                                        <rzslider rz-slider-model="vm.slider.sizeRisk.value" rz-slider-options="vm.slider.sizeRisk.options"></rzslider>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="pull-left risk-imgtitle-block">
+                                    <div>
+                                        <span class="inline-block pull-left stratification-img"><img src="images/stage.scale.png" alt="" class="img-responsive"></span>
+                                        <span class="stratification-title"> Stage </span>
+                                    </div>
+                                </div>
+                                <div class="pull-left risk-slider-block">
+                                    <div class="slider-block-inner">
+                                        <rzslider rz-slider-model="vm.slider.storageRisk.value" rz-slider-options="vm.slider.storageRisk.options"></rzslider>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="pull-left risk-imgtitle-block">
+                                    <div>
+                                        <span class="inline-block pull-left stratification-img"><img src="images/grade.scale.png" alt="" class="img-responsive"></span>
+                                        <span class="stratification-title"> Grade </span>
+                                    </div>
+                                </div>
+                                <div class="pull-left risk-slider-block">
+                                    <div class="slider-block-inner">
+                                        <rzslider rz-slider-model="vm.slider.graderRisk.value" rz-slider-options="vm.slider.graderRisk.options"></rzslider>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="pull-left risk-imgtitle-block">
+                                    <div>
+                                        <span class="inline-block pull-left stratification-img"><img src="images/morphology.scale.png" alt="" class="img-responsive"></span>
+                                        <span class="stratification-title"> Morphology </span>
+                                    </div>
+                                </div>
+                                <div class="pull-left risk-slider-block morphology-block">
+                                    <div class="slider-block-inner">
+                                        <rzslider rz-slider-model="vm.slider.morphologyRisk.value" rz-slider-options="vm.slider.morphologyRisk.options"></rzslider>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="pull-left hidden-xs risk-imgtitle-block">
+                                    &nbsp;
+                                <div class="pull-left risk-slider-block risk-stratification-nav">
+                                    <ul>
+                                        <li class="low-risk-menu"><a href="#/risk-classbased-therapy/{{vm.lowRisk[0]}}/{{vm.lowRisk[1]}}" ng-class="{'active':vm.calculatedRisk == 1}">Low Risk</a>
+                                        </li>
+                                        <li class="intermediate-menu"><a href="#/risk-classbased-therapy/{{vm.intermidateRisk[0]}}/{{vm.intermidateRisk[1]}}" ng-class="{'active':vm.calculatedRisk == 2}" >Intermediate Risk</a>
+                                        </li>
+                                        <li class="highrisk-menu"><a href="#/risk-classbased-therapy/{{vm.highRisk[0]}}/{{vm.highRisk[1]}}" ng-class="{'active':vm.calculatedRisk == 3}">High Risk</a>
+                                        </li>
+                                        <li class="highestrisk-menu"><a href="#/risk-classbased-therapy/{{vm.highestisk[0]}}/{{vm.highestisk[1]}}" ng-class="{'active':vm.calculatedRisk == 4}">Highest Risk</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
